@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  background-color: #f9fafb;
+}
+
+header {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: #2563eb;
+}
+
+footer {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #f3f4f6;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
