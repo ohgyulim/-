@@ -29,11 +29,11 @@ const districts = [
   "중랑구",
 ];
 
-export default function SeoulModal({ clickModal, setSelectedDistrict }) {
+export default function SeoulModal({ clickSeoulModal, setSelectedDistrict }) {
   return (
     <div
       className="fixed inset-0 z-50 bg-black/30 flex justify-center items-center"
-      onClick={clickModal}
+      onClick={clickSeoulModal}
     >
       <div
         className="bg-white w-full max-w-md mx-4 rounded-2xl shadow-lg p-8"
@@ -49,7 +49,7 @@ export default function SeoulModal({ clickModal, setSelectedDistrict }) {
               className="border border-gray-200 rounded-lg px-4 py-2 text-center cursor-pointer hover:bg-blue-50 hover:border-blue-500 transition"
               onClick={() => {
                 setSelectedDistrict(d);
-                clickModal();
+                clickSeoulModal();
               }}
             >
               {d}
@@ -58,7 +58,7 @@ export default function SeoulModal({ clickModal, setSelectedDistrict }) {
         </ul>
         <div className="flex justify-end mt-8">
           <button
-            onClick={clickModal}
+            onClick={clickSeoulModal}
             className="px-6 py-2 text-base font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition"
           >
             닫기
