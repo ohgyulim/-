@@ -8,7 +8,7 @@ export default function PolicyCard({ policyInfo }) {
   const [likesState, setLikesState] = useState(policyInfo.likes);
   const changeLikesState = () => setLikesState(!likesState);
   return (
-    <div className="bg-white rounded-2xl shadow-md p-5 w-80 relative">
+    <div className="bg-white rounded-2xl shadow-md p-5 w-70 relative">
       {/* 상단 상태 및 아이콘 */}
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
@@ -45,7 +45,7 @@ export default function PolicyCard({ policyInfo }) {
 
       {/* 버튼 */}
       <Link href={`/detail/${policyInfo.index}`}>
-        <button className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl">
+        <button className="cursor-pointer w-full py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl">
           자세히 보기
         </button>
       </Link>

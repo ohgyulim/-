@@ -55,7 +55,7 @@ export default function PolicyModal({ clickPolicyModal, setSelectedPolicies }) {
       >
         {/* 닫기(X) 버튼 */}
         <button
-          className="absolute top-4 right-4 text-gray-400 hover:text-blue-500"
+          className="cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-blue-500"
           onClick={clickPolicyModal}
           aria-label="닫기"
         >
@@ -156,7 +156,7 @@ export default function PolicyModal({ clickPolicyModal, setSelectedPolicies }) {
 
         {/* 완료 버튼 */}
         <button
-          className="w-full py-3 rounded-lg bg-blue-600 text-white text-lg font-semibold hover:bg-blue-700 transition"
+          className="cursor-pointer w-full py-3 rounded-lg bg-blue-600 text-white text-lg font-semibold hover:bg-blue-700 transition"
           onClick={handleComplete}
         >
           완료
