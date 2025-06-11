@@ -15,13 +15,8 @@ export default function BasicInfoForm() {
   const clickSeoulModal = () => setShowSeoulModal((prev) => !prev);
   const clickPolicyModal = () => setShowPolicyModal((prev) => !prev);
 
-  const removePolicy = (policyToRemove) => {
-    setSelectedPolicies((prev) =>
-      prev.filter((policy) => policy !== policyToRemove)
-    );
-  };
   return (
-    <section className="bg-white p-10 rounded-2xl shadow-md max-w-5xl mx-auto mt-6 pb-30">
+    <div>
       <h2 className="text-lg font-semibold text-gray-800 mb-4">
         기본 정보 입력
       </h2>
@@ -112,6 +107,6 @@ export default function BasicInfoForm() {
           검색하기
         </button>
       </form>
-    </section>
+    </div>
   );
 }
