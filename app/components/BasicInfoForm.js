@@ -6,6 +6,8 @@ import PolicyModal from "./PolicyModal";
 import { IoSearchOutline } from "react-icons/io5";
 
 export default function BasicInfoForm() {
+  const [birthDate, setBirthDate] = useState("");
+
   const [showSeoulModal, setShowSeoulModal] = useState(false);
   const [selectedDistrict, setSelectedDistrict] = useState("");
 
@@ -23,12 +25,16 @@ export default function BasicInfoForm() {
         </h2>
         <form className="flex flex-wrap gap-4 items-end">
           {/* 출생연도 */}
+
           <div className="flex flex-col">
-            <label className="text-sm text-gray-700 mb-1">출생연도</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              생년월일
+            </label>
             <input
               type="date"
-              defaultValue="1999-01-01"
-              className="w-40 px-3 py-2 bg-gray-50 border border-gray-300 rounded-md text-sm text-gray-500"
+              value={birthDate}
+              onChange={(e) => setBirthDate(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md text-sm bg-gray-50 text-gray-500"
             />
           </div>
 
