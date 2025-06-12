@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="w-full py-4 px-6 border-b shadow-sm bg-white">
@@ -7,9 +9,9 @@ export default function Header() {
         </a>
         <nav className="space-x-4 text-sm text-gray-700">
           <a href="/">홈</a>
-          <a href="/policies">모든 정책 보기</a>
-          <a href="/recommend">맞춤 정책 보기</a>
-          <a href="/likes">찜 목록</a>
+          <Link href="/policies">모든 정책 보기</Link>
+          <Link href="/personal-policies">맞춤 정책 보기</Link>
+          <Link href="/likes">찜 목록</Link>
         </nav>
       </div>
     </header>

@@ -92,7 +92,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="text-center py-8 px-4 bg-gray-50">
+      <section className="text-center py-16 px-4 bg-gray-50">
         <h2 className="text-3xl font-bold text-gray-800 mb-2">
           서울 청년 정책 추천 서비스
         </h2>
